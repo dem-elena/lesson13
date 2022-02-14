@@ -7,9 +7,7 @@ const todoCompleted = document.querySelector(".todo-completed");
 let toDoData;
 const readStorage = function () {
   if (localStorage.toDos !== undefined) {
-    console.log("определено");
     toDoData = JSON.parse(localStorage.toDos);
-    console.log(JSON.parse(localStorage.toDos));
     render();
   } else {
     toDoData = [];
